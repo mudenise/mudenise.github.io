@@ -27,7 +27,7 @@ body {
 }
 
 #detalle {
-    background: #FF416C;
+    background: #1a8055;
     width: 50%;
     height: 100%;
     float: left;
@@ -39,7 +39,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     overflow: hidden;
-    padding: 40px;
+    padding: 30px;
 }
 
 input {
@@ -47,19 +47,20 @@ input {
     padding: 12px 15px;
     border: none;
     background-color: #eee;
+    margin: 20px 0px;
 }
 
 button {
     font-size: 15px;
     font-weight: bold;
-    padding: 12px 45px;
-    border-radius: 30px;
-    background-color: #FF416C;
-    border: 1px solid #FF416C;
+    padding: 12px 20px;
+    border-radius: 0px;
+    background-color: #1a8055;
+    border: 1px solid #1a8055;
     color: #FFFFFF;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: transform 20ms ease-in;
+    letter-spacing: 2px;
+    transition: transform 20ms ease-in-out;
 }
 
 button:active {
@@ -73,9 +74,17 @@ button:active {
 }
 
 .resultado {
-    color: #A811D1;
+    color: #073a33;
     font-weight: bold;
-    font-size: 25px;
-    margin-bottom: 5px;
+    font-size: 18px;
+    margin: 15px;
     display: none;
+}
+
+#Holliday {
+    font-weight: bold;
+}
+
+#superficie {
+    font-weight:bold;
 }
