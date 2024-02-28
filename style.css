@@ -88,3 +88,20 @@ button:active {
 #superficie {
     font-weight:bold;
 }
+
+#id {
+    font-weight: bold;
+    display: none;
+}
+
+#flujo{
+    font-weight: lighter;
+}
+
+#flujo_medio {
+    font-weight: lighter;
+}
+
+#volumen {
+    font-weight: lighter;
+}
