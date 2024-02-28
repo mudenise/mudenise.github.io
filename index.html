@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="./style.css" />
     <title>Calculadora de hidratacion</title>
-    <script src="./script1.js" defer></script>
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <div id="contenedor">
@@ -11,10 +11,16 @@
         <div class="contenido">
           <h1>Hidratación Basal</h1>
             <p class="item">Completa todos los datos</p>
-          <input class="item" id="peso" type="number" placeholder="Peso en kg"/>
-          <p class="item" id="error">* Debe completar todos los datos</p>
-          <button class="item" id="calcular">Calcular</button>
-          <p class="item resultado" id="id">cc</p>
+            <p class="item" id="error">* Debe completar todos los datos</p>
+            <input class="item" id="peso" type="number" placeholder="Peso en kg"/>
+            <button class="item" id="calcular">Calcular</button>
+          <div id="id" style="display: none;">
+            <span class="item" id="legend">Multiplicar por:</span>
+            <select id="opcion"> 
+                <option value="1500" id="choice">1500</option>
+                <option value="2000" id="choice">2000</option>
+            </select>
+          </div>
           <p class="item resultado" id="volumen">Volumen diario</p>
           <p class="item resultado" id="flujo">71cc/h</p>
           <p class="item resultado" id="flujo_medio">m+m/2 : 105cc/h</p>
@@ -23,13 +29,13 @@
       <div id="detalle">
         <div class="contenido">
           <h1>¿Cómo se calcula?</h1>
-          <p id="Holliday">Método Holliday Segar (menos de 30kg)</p>
+          <h4 id="Holliday">Método Holliday Segar (menos de 30kg)</h4>
           <ul>
             <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
             <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
             <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
           </ul>
-          <p id="superficie">Método de superficie corporal (más de 30kg)</p>
+          <h4 id="superficie">Método de superficie corporal (más de 30kg)</h4>
           <ul>
             <li>Superficie corporal= ((peso x 4)+7/(peso+90))</li>
             <li>Superficie corporal x 1500 o 2000= Volumen diario en cc</li>
